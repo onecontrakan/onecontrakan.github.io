@@ -1,0 +1,122 @@
+/*Koding Kontainer*/
+.container-fluid.main{
+  position: relative;
+  padding: 0;
+}
+/*Koding Tataletak Slideshow*/
+.carousel .background {
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+/*Koding Bg Tidak Mengecil*/
+@media (max-width:991px) {
+  .carousel .background {
+    background-size: cover;
+  }
+}
+/*Koding Link Bg a-c*/
+.carousel .background.a {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://4.bp.blogspot.com/-s-ju4XpI8BQ/Wyu1UcJpNWI/AAAAAAAADZ0/PSiD216wAZcpJQprXfDbpdE-kp3-DXFOACLcBGAs/s1600/1.jpg");
+}
+
+.carousel .background.b {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://2.bp.blogspot.com/-0OlApxCXnGc/Wyu1VQDHPmI/AAAAAAAADZ8/hFM1FKqqf7cpdHtB8QeUkrFj00EW7MwsACLcBGAs/s1600/2.jpg");
+}
+
+.carousel .background.c {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://3.bp.blogspot.com/-elQU_1de-kA/Wyu1VRf9IuI/AAAAAAAADZ4/U758B_1mKjQYwN9BDWKmE16WnHx-MC35wCLcBGAs/s1600/3.jpg");
+}
+/*Koding Efek Fade Slide*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+/*Koding Untuk Mengatur Pergantian Slide*/
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/*Koding Logo Wisata Pedia*/
+.covertext {
+  position: absolute;
+  top: 200px;
+  left: 0px; 
+  right: 0px;
+}
+/*Koding Judul*/
+.title {
+  font-family: Arial Black ;
+  font-weight: 400;
+  font-size: 70px;
+  color: #ffffff;
+  text-align: center;
+}
+/*Koding Subjudul*/
+.subtitle {
+  font-family: Verdana;
+  font-size: 23px;
+  color: #ffffff;
+  text-align: center;
+}
+/*Koding Button*/
+.explore {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.explore .btn-lg,
+.explore .btn-lg:hover {
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-size: 22px;
+  background-image: none;
+  background-color: #FF4000;
+  border-color: #FF4000;
+  color: #ffffff;
+}
+
+.btn,
+.btn:hover {
+  border-radius: 0px;
+  background-image: none;
+  background-color: #FF4000;
+  border-color: #FF4000;
+  color: #ffffff;
+  margin-bottom: 20px;
+  box-shadow: none;
+  outline: none;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  color: #ffffff;
+  outline: none;
+}
